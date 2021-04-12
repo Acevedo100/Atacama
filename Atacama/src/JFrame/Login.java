@@ -19,7 +19,8 @@ public class Login extends javax.swing.JFrame {
      */
     public Login() {
         initComponents();
-        this.getContentPane().setBackground(Color.red);
+        this.getContentPane().setBackground(new Color(230,4,7,255));
+       
 
     }
 
@@ -49,6 +50,7 @@ public class Login extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
+        jLabel7 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -70,6 +72,12 @@ public class Login extends javax.swing.JFrame {
         jLabel3.setText("Nueva Password");
 
         jLabel4.setText("Verificar Password");
+
+        jPasswordField2.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                jPasswordField2KeyReleased(evt);
+            }
+        });
 
         jPasswordField3.setEditable(false);
         jPasswordField3.setEnabled(false);
@@ -118,6 +126,7 @@ public class Login extends javax.swing.JFrame {
         });
 
         jButton2.setText("Continua");
+        jButton2.setEnabled(false);
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
@@ -212,24 +221,34 @@ public class Login extends javax.swing.JFrame {
                     .addComponent(jButton1)
                     .addComponent(jButton2)
                     .addComponent(jButton3))
-                .addContainerGap(34, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
+
+        jLabel7.setIcon(new javax.swing.ImageIcon("/Users/joseacevedo/NetBeansProjects/Atacama/Imagenes/1602821940734.jpg")); // NOI18N
+        jLabel7.setText("jLabel7");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(117, 117, 117)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(139, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(117, 117, 117)
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(185, 185, 185)
+                        .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(170, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(86, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(76, 76, 76))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
         pack();
@@ -248,7 +267,7 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        String nomUsuarioLogin = jTextField1.getText(); //Boton Aceptar
+        String nomUsuarioLogin = jTextField1.getText(); 
         String passwordLogin = new String(jPasswordField1.getPassword());
 
         if (nomUsuarioLogin.equals("n944551") && passwordLogin.equals("121737193")) {
@@ -280,15 +299,21 @@ public class Login extends javax.swing.JFrame {
 
     private void jButton1KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton1KeyReleased
 
-        jButton1.setEnabled(
-                jTextField1.getText().length() != 0);
-
     }//GEN-LAST:event_jButton1KeyReleased
 
     private void jTextField1KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyReleased
-         jButton1.setEnabled(
+        jButton1.setEnabled(
+                jTextField1.getText().length() != 0);
+        jButton2.setEnabled(
                 jTextField1.getText().length() != 0);
     }//GEN-LAST:event_jTextField1KeyReleased
+
+    private void jPasswordField2KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jPasswordField2KeyReleased
+               jPasswordField3.setEnabled(
+                jPasswordField2.getText().length() != 0);
+               jPasswordField3.setEditable(jPasswordField2.getText().length() != 0);
+                
+    }//GEN-LAST:event_jPasswordField2KeyReleased
 
     /**
      * @param args the command line arguments
@@ -337,6 +362,7 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JPasswordField jPasswordField2;

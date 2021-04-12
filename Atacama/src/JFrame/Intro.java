@@ -5,6 +5,8 @@
  */
 package JFrame;
 
+import javax.swing.JFrame;
+
 /**
  *
  * @author joseacevedo
@@ -89,12 +91,14 @@ public class Intro extends javax.swing.JFrame {
 
         jLabel10.setText("Rut");
 
+        jTextField10.setEnabled(false);
         jTextField10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField10ActionPerformed(evt);
             }
         });
 
+        jTextField11.setEnabled(false);
         jTextField11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField11ActionPerformed(evt);
@@ -103,6 +107,7 @@ public class Intro extends javax.swing.JFrame {
 
         jLabel11.setText("Nombre");
 
+        jTextField12.setEnabled(false);
         jTextField12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField12ActionPerformed(evt);
@@ -111,6 +116,7 @@ public class Intro extends javax.swing.JFrame {
 
         jLabel12.setText("Usuario");
 
+        jTextField13.setEnabled(false);
         jTextField13.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField13ActionPerformed(evt);
@@ -119,6 +125,7 @@ public class Intro extends javax.swing.JFrame {
 
         jLabel13.setText("Perfil");
 
+        jTextField14.setEnabled(false);
         jTextField14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField14ActionPerformed(evt);
@@ -127,6 +134,7 @@ public class Intro extends javax.swing.JFrame {
 
         jLabel14.setText("Turno");
 
+        jTextField15.setEnabled(false);
         jTextField15.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField15ActionPerformed(evt);
@@ -135,6 +143,7 @@ public class Intro extends javax.swing.JFrame {
 
         jLabel15.setText("Modalidad");
 
+        jTextField16.setEnabled(false);
         jTextField16.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField16ActionPerformed(evt);
@@ -143,6 +152,7 @@ public class Intro extends javax.swing.JFrame {
 
         jLabel16.setText("Centro Contable");
 
+        jTextField17.setEnabled(false);
         jTextField17.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField17ActionPerformed(evt);
@@ -151,6 +161,7 @@ public class Intro extends javax.swing.JFrame {
 
         jLabel17.setText("Fecha Contable");
 
+        jTextField18.setEnabled(false);
         jTextField18.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField18ActionPerformed(evt);
@@ -159,6 +170,7 @@ public class Intro extends javax.swing.JFrame {
 
         jLabel18.setText("Ind. Atencion ");
 
+        jTextField19.setEnabled(false);
         jTextField19.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField19ActionPerformed(evt);
@@ -169,6 +181,7 @@ public class Intro extends javax.swing.JFrame {
 
         jLabel20.setText("Ultima conexion");
 
+        jTextField20.setEnabled(false);
         jTextField20.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField20ActionPerformed(evt);
@@ -177,12 +190,14 @@ public class Intro extends javax.swing.JFrame {
 
         jLabel21.setText("Fecha expiracion");
 
+        jTextField21.setEnabled(false);
         jTextField21.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField21ActionPerformed(evt);
             }
         });
 
+        jTextField22.setEnabled(false);
         jTextField22.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField22ActionPerformed(evt);
@@ -354,11 +369,18 @@ public class Intro extends javax.swing.JFrame {
 
         jLabel5.setText("Saldo Yen");
 
+        jTextField2.setEnabled(false);
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField2ActionPerformed(evt);
             }
         });
+
+        jTextField3.setEnabled(false);
+
+        jTextField4.setEnabled(false);
+
+        jTextField5.setEnabled(false);
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -405,11 +427,19 @@ public class Intro extends javax.swing.JFrame {
 
         jLabel6.setText("Saldo Pesos");
 
+        jTextField6.setEnabled(false);
+
         jLabel7.setText("Saldo Dolares");
+
+        jTextField7.setEnabled(false);
 
         jLabel8.setText("Saldo Euros");
 
+        jTextField8.setEnabled(false);
+
         jLabel9.setText("Saldo Yen");
+
+        jTextField9.setEnabled(false);
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -453,10 +483,20 @@ public class Intro extends javax.swing.JFrame {
         );
 
         jButton1.setText("Apertura");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jButton2.setText("Re Apertura");
 
         jButton3.setText("Salir");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -478,7 +518,7 @@ public class Intro extends javax.swing.JFrame {
                                 .addComponent(jButton2)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addContainerGap(98, Short.MAX_VALUE))
+                .addContainerGap(49, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -527,7 +567,31 @@ public class Intro extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField2ActionPerformed
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        // TODO add your handling code here:
+        String rutUsuario = jTextField1.getText();
+        if (rutUsuario.equals("255425722")) {
+            jTextField1.setText("25.542.572-2");
+            jTextField2.setEnabled(true);
+            jTextField3.setEnabled(true);
+            jTextField4.setEnabled(true);
+            jTextField5.setEnabled(true);
+            jTextField6.setEnabled(true);
+            jTextField7.setEnabled(true);
+            jTextField8.setEnabled(true);
+            jTextField9.setEnabled(true);
+            jTextField10.setEnabled(true);
+            jTextField11.setEnabled(true);
+            jTextField12.setEnabled(true);
+            jTextField13.setEnabled(true);
+            jTextField14.setEnabled(true);
+            jTextField15.setEnabled(true);
+            jTextField16.setEnabled(true);
+            jTextField17.setEnabled(true);
+            jTextField18.setEnabled(true);
+            jTextField19.setEnabled(true);
+            jTextField20.setEnabled(true);
+            jTextField21.setEnabled(true);
+            jTextField22.setEnabled(true);
+        }
     }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void jTextField19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField19ActionPerformed
@@ -581,6 +645,21 @@ public class Intro extends javax.swing.JFrame {
     private void jTextField22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField22ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField22ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        Login abrirLogin = new Login();
+        abrirLogin.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        String rutUsuario = jTextField1.getText();
+        if (rutUsuario.equals("25.542.572-2")) {
+            Escritorio abrirEscritorio = new Escritorio();
+            abrirEscritorio.setVisible(true);
+            this.setVisible(false);
+        }
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
